@@ -21,7 +21,7 @@
 <body class="text-center">
   <!-- Navbar -->
   <!-- Cover -->
-  <div class="d-flex align-items-center section-aquamarine py-5 cover" style="	background-image: url(&quot;assets/conference/portada.jpg&quot;);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+  <div class="d-flex align-items-center section-aquamarine cover py-3" style="background-image: url(&quot;assets/conference/portada.jpg&quot;); background-position: left top; background-size: 100%; background-repeat: repeat;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
@@ -38,12 +38,39 @@
   <div class="">
     <div class="container-fluid">
       <div class="row">
-        <div class="px-md-5 p-3 d-flex flex-column justify-content-center text-center col-lg-6">
-          <h1 class="" style="" contenteditable="true"><b>Project objective</b></h1>
-          <p class="mb-3 lead">The purpose of this project is to have a tool to identify&nbsp;<br></p>
+        <div class="px-md-5 p-3 d-flex flex-column justify-content-center text-center col-lg-12" style="">
+          <h1 class="my-4" contenteditable="true"><b>Objective of the project</b></h1>
+          <p class="lead text-center pb-2 mx-4 mb-3">The purpose of this project is to apply all the techniques and skills acquired during the Data Science Master from Kschool.&nbsp;&nbsp;<br>I chose a topic related to my study field, energy, in particular I decided to work with household consumption data. The objective is to develop a tool that helps the energy audit of a home. The output is a recommendation of slight changes in periods to use certain electrical household appliances.<br></p>
         </div>
-        <div class="p-0 col-lg-6">
-          <iframe width="800" height="500" src="charts/mapa1.html"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center"><b>Data sources</b></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="p-md-1 flex-column align-items-start col-8" style="">
+          <p class="lead pb-2 text-justify ml-5 mb-0" style="">For the this project there are two datasets that have been used, to access the sources simply click on the image<br></p>
+          <ul class="ml-5">
+            <li class="text-left ml-5">Household data&nbsp;containing diferent load information (kWh) in hourly resolution</li>
+            <li class="text-left ml-5">Hourly prices (€/MWh)</li>
+          </ul>
+        </div>
+        <div class="p-3 col-lg-3">
+          <div id="carousel2" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item active"> <img class="d-block w-100" src="assets/conference/Logo_OPSD_bw_2000px.png" onclick=" window.open('https://open-power-system-data.org/','_blank')"> </div>
+              <div class="carousel-item"> <img class="d-block w-100" src="assets/conference/entsoe logo.png" onclick=" window.open('https://transparency.entsoe.eu/dashboard/show','_blank')"> </div>
+            </div>
+            <a class="carousel-control-prev text-dark" href="#carousel1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon text-dark align-items-end" aria-hidden="true" style=""></span></a>
+            <a class="carousel-control-next text-dark" href="#carousel2" role="button" data-slide="next" style="color:black">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -54,7 +81,66 @@
   <!-- Call to action -->
   <!-- Footer -->
   <!-- JavaScript dependencies -->
-  <div class="py-5"></div>
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/bulbs.jpg&quot;);"></div>
+  <div class="py-5 text-center text-white bg-light" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(assets/conference/bk1.jpg), url(https://pingendo.com/site-assets/cover.jpg);	background-position: center center, center center, top left;	background-size: cover, cover, 100%;	background-repeat: repeat, repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-12">
+          <h1 class="mb-3"><b>Structure and development&nbsp;</b></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 p-4" style=""> <img class="img-fluid d-block rounded-circle mx-auto mb-3 m-2" src="assets/conference/prices.jpg" alt="Card image cap" width="250">
+          <h4> <b>Prices Modelling</b></h4>
+          <p class="mb-0">Information about hourly energy prices is treated in order to obtain clusters with the variances of the prices depending on the hour</p><a href="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" class="btn btn-light my-3" data-target="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" data-toggle="modal" onclick=" window.open('https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb','_blank')">Jupyter notebook</a>
+        </div>
+        <div class="col-lg-4 col-md-6 p-4" style=""> <img class="img-fluid d-block rounded-circle mx-auto mb-3 m-2" src="assets/conference/appliances2.jpg" alt="Card image cap" width="250">
+          <h4> <b>Appliances data</b></h4>
+          <p class="mb-0">The data of energy meter data of home appliances from different households is cleaned to get cost information based on the use.<br></p><a href="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" class="btn btn-light my-3" data-target="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" data-toggle="modal" onclick=" window.open('https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb','_blank')">Jupyter notebook</a>
+        </div>
+        <div class="col-lg-4 p-4"><img class="img-fluid d-block rounded-circle mx-auto mb-3 m-2" src="assets/conference/recomm.jpg" alt="Card image cap" width="250">
+          <h4> <b>Recommendations</b></h4>
+          <p class="mb-0">Recommendations for a better use of the selected house and elecrical appliance are made.<br>&nbsp;</p><a href="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" class="btn btn-light my-3" data-target="https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb" data-toggle="modal" onclick=" window.open('https://github.com/Aroagm/TFM_HouseholdConsumptions/blob/master/Precios.ipynb','_blank')">Shiny App</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5" style="	background-image: url(assets/conference/steps.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat;	background-attachment: fixed;">
+    <div class="container">
+      <div class="row">
+        <div class="ml-auto p-3 col-md-2 bg-white"> <img class="img-fluid d-block rounded" src="assets/conference/to_do.jpg"> </div>
+        <div class="p-3 col-md-9 mr-auto bg-white text-dark">
+          <div class="blockquote mb-0">
+            <p>I want to keep learning and this project has some improvements that I would like to implement in the future.&nbsp;<br>First, the model could be more precise, with data from more houses a proper recommendation algorithm could be tried. Also the study of price trends and uses by household appliance&nbsp;could be deepened. </p>
+            <div class="blockquote-footer">&nbsp;<b class="text-right">Aroa Galán.</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><a class="btn btn-link w-50" href="#">Back to the beginning</a></div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <div class="" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75));	background-size: 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="my-3 col-lg-8">
+          <h1 class="text-center text-lg-left text-white">Keep in touch</h1>
+        </div>
+        <div class="text-center align-self-center col-lg-4"> <a href="#">
+            <i class="fa fa-fw text-white mx-3 fa-github fa-2x" onclick=" window.open('https://github.com/Aroagm','_blank')"></i>
+          </a> <a href="#">
+            <i class="fa fa-fw text-white mx-3 fa-2x fa-linkedin" onclick=" window.open('https://www.linkedin.com/in/aroagalanmartin/','_blank')"></i>
+          </a> </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
